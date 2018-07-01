@@ -2,7 +2,7 @@
 
 ###Overview
 
-Liri is a SIRI clone using **L**anguage instead of **S**peech.
+Liri is a SIRI node.js clone using **L**anguage instead of **S**peech.
 
 ###Commands
 
