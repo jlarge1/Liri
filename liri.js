@@ -105,6 +105,28 @@ function doWhatSays() {
     });
 }
 
+function moreInfo(input) {
+    switch (input) {
+        case "my-tweets":
+            console.log("This command shows the last 20 tweets from an account.");
+            console.log("No other input is accepted.");
+            break;
+        case "spotify-this-song":
+            console.log("This command shows information about a song.");
+            console.log('This command takes additional input in the form of a search query. Ex - "the sign - ace of base"');
+            break;
+        case "movie-this":
+            console.log("This command shows information about a movie.")
+            console.log('This command takes additional input to search in the form of a movie title. Ex - "the color purple"');
+            break;
+        case "do-what-it-says":
+            console.log("This command reads a files and performs the command written there.")
+            console.log("The file name is random.txt")
+            break;
+
+    }
+}
+
 function main(command, input) {
     switch (command) {
         case "my-tweets":
@@ -119,8 +141,12 @@ function main(command, input) {
         case "do-what-it-says":
             doWhatSays();
             break;
+        case "what":
+            moreInfo(input);
+            break;
         default:
             console.log("liri accepts the following commands: my-tweets, spotify-this-song, movie-this, do-what-it-says")
+            console.log('run "what + command" for more information - ex. more my-tweets')
     }
 
 }
