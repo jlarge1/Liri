@@ -1,10 +1,10 @@
 # Liri
 
-###Overview
+### Overview
 
 Liri is a SIRI node.js clone using **L**anguage instead of **S**peech.
 
-###Commands
+### Commands
 
 Liri accepts the follow commands:
 
